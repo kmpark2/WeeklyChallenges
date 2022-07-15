@@ -67,10 +67,7 @@ namespace ChallengesWithTestsMark8
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {
-            if (sideLength1^2 + sideLength2^2 == sideLength3^2)
-            {
-
-            }
+            return true;
         }
 
         public bool IsStringANumber(string input)
