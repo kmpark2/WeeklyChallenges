@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ChallengesWithTestsMark8
 {
@@ -27,9 +28,17 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
+            if (numbers == null)
+            {
+                return 0;
+            }
             double max = 0;
             double min = 0;
-            if (numbers != null)
+            if (numbers.Count() == 1)
+            {
+                return numbers.First() * 2;
+            }
+            else
             {
                 foreach (double number in numbers)
                 {
