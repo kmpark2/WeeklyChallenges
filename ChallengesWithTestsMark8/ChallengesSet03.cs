@@ -19,9 +19,9 @@ namespace ChallengesWithTestsMark8
 
         public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
-            int sum = 0;
             if (numbers != null)
             {
+                int sum = 0;
                 foreach (int n in numbers)
                 {
                     if (n % 2 != 0)
@@ -45,6 +45,7 @@ namespace ChallengesWithTestsMark8
             
             for (int i = 0; i < password.Length; i++)
             {
+
                 if (Char.IsUpper(password[i]) == true)
                 {
                     hasUpper = true;
